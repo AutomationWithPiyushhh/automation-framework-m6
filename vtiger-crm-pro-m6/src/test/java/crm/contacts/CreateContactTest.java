@@ -6,12 +6,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import generic_utility.WebDriverUtility;
 
 public class CreateContactTest {
 	public static void main(String[] args) throws InterruptedException {
 //		browser opening
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		
+		WebDriverUtility wdUtil = new WebDriverUtility(driver);
+		wdUtil.maximizeWindow();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
 //		login
@@ -19,7 +24,17 @@ public class CreateContactTest {
 
 //		enter username and password 
 		WebElement username = driver.findElement(By.name("user_name"));
+//					0011 
+		
+		driver.navigate().refresh();
+		
+//		re-initialization 
+		username = driver.findElement(By.name("user_name"));
+//		 1100
+		
 		username.sendKeys("admin");
+//		 1100
+		
 		WebElement password = driver.findElement(By.name("user_password"));
 		password.sendKeys("password");
 
@@ -52,7 +67,9 @@ public class CreateContactTest {
 
 //		logout
 		WebElement profile = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
-		profile.click();
+
+		wdUtil.hover(profile);
+
 		driver.findElement(By.linkText("Sign Out")).click();
 
 //		browser closing
