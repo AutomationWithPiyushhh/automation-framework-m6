@@ -17,19 +17,17 @@ public class LoginPage {
 //	private WebElement username;
 
 //	AutoHealing	
-	@FindAll(
-			{
+	@FindAll({
 				@FindBy(id = "username"),
 				@FindBy(name = "user_name")
-			}
-			)
+			})
 	private WebElement username;
 	
 	public WebElement getUn() {
 		return username;
 	}
 
-	 (name = "user_password")
+	@FindBy(name = "user_password")
 	private WebElement password;
 
 	public WebElement getPwd() {

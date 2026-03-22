@@ -6,16 +6,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
 
 import generic_utility.WebDriverUtility;
 
-public class CreateContactTest {
-	public static void main(String[] args) throws InterruptedException {
-//		browser opening
-		WebDriver driver = new ChromeDriver();
+public class ContactTest { //TestNG class
+
+	@Test
+	public void createContactTest() throws InterruptedException { // Test Case
+	//		browser opening
+		WebDriver driver = new ChromeDriver(); // Test steps
 		
-		WebDriverUtility wdUtil = new WebDriverUtility(driver);
+		WebDriverUtility wdUtil = new WebDriverUtility(driver); // Test steps
 		wdUtil.maximizeWindow();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
@@ -61,6 +64,7 @@ public class CreateContactTest {
 		boolean status = actLastName.equals(lastName);
 		if (status) {
 			System.out.println("Contact created successfully!!!");
+			Reporter.log("--Contact created successfully!!!--");
 		} else {
 			System.out.println("Failed.....");
 		}
@@ -76,4 +80,7 @@ public class CreateContactTest {
 		Thread.sleep(3000);
 		driver.quit();
 	}
+
+
+
 }
