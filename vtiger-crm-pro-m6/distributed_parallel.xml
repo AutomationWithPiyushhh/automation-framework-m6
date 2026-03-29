@@ -1,0 +1,23 @@
+
+<suite parallel="tests" name="Suite">
+	<test parallel="tests" name="thread1">
+		<classes>
+			<class name="types_of_execution.OppTest" />
+		</classes>
+	</test>
+	<test parallel="tests" name="thread2">
+		<classes>
+			<class name="types_of_execution.ContactTest" />
+		</classes>
+	</test>
+	<test parallel="tests" name="thread3">
+		<classes>
+			<class name="types_of_execution.OrgTest" />
+		</classes>
+	</test>
+	<test parallel="tests" name="thread4">
+		<classes>
+			<class name="types_of_execution.LeadsTest" />
+		</classes>
+	</test>
+</suite>

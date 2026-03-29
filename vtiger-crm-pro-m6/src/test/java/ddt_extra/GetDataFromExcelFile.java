@@ -12,28 +12,36 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class GetDataFromExcelFile {
 	public static void main(String[] args) throws EncryptedDocumentException, IOException {
-
-		FileInputStream fis = new FileInputStream("./src/test/resources/testScriptData.xlsx");
-
+		FileInputStream fis = new FileInputStream("./src/test/resources/demo.xlsx");
+		
 		Workbook wb = WorkbookFactory.create(fis);
+		
+		Sheet sh = wb.getSheet("stud");
+		
+		Row row = sh.getRow(2);
+		
+		Cell cell = row.getCell(0);
 
-		String value1 = wb.getSheet("org").getRow(2).getCell(0).getStringCellValue();
+		String value1 = cell.getStringCellValue();
 		
+		String value2 = wb.getSheet("stud").getRow(2).getCell(1).getStringCellValue();
+		String value3 = wb.getSheet("stud").getRow(2).getCell(2).getStringCellValue();
+		String value4 = wb.getSheet("stud").getRow(2).getCell(3).getStringCellValue();
 		
+
 		System.out.println(value1);
 
-		
-		
-		
-//		boolean value2 = wb.getSheet("org").getRow(2).getCell(2).getBooleanCellValue();
-//		double value3 = wb.getSheet("org").getRow(2).getCell(3).getNumericCellValue();
+		System.out.println(value2);
 
-//		cell.getNumericCellValue();
-//		cell.getBooleanCellValue();
+		System.out.println(value3);
 
-//		System.out.println(value2);
-//		System.out.println(value3);
-
+		System.out.println(value4);
+			
+//		double value2 = cell.getNumericCellValue();
+//
+//		boolean value3 = cell.getBooleanCellValue();
+		
 		wb.close();
 	}
 }
+

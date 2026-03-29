@@ -1,0 +1,19 @@
+
+<suite name="Suite">
+
+	<groups>
+		<run>
+			<exclude name="create" />
+		</run>
+	</groups>
+
+
+	<test name="Test">
+		<classes>
+			<class name="types_of_execution.OppTest" />
+			<class name="types_of_execution.ContactTest" />
+			<class name="types_of_execution.OrgTest" />
+			<class name="types_of_execution.LeadsTest" />
+		</classes>
+	</test>
+</suite>
