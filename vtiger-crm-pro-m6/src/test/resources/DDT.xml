@@ -1,0 +1,10 @@
+<suite name="suite">
+	<test name="test1">
+		<parameter name="bro" value="chrome"></parameter>
+		<parameter name="un" value="admin"></parameter>
+		<parameter name="pwd" value="password"></parameter>
+		<classes>
+			<class name="types_of_execution.ContactTest" />
+		</classes>
+	</test>
+</suite>

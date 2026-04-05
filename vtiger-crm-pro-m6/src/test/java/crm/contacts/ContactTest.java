@@ -6,18 +6,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import generic_utility.WebDriverUtility;
 
-public class ContactTest { //TestNG class
+public class ContactTest { // TestNG class
 
 	@Test
 	public void createContactTest() throws InterruptedException { // Test Case
-	//		browser opening
+		// browser opening
 		WebDriver driver = new ChromeDriver(); // Test steps
-		
+
 		WebDriverUtility wdUtil = new WebDriverUtility(driver); // Test steps
 		wdUtil.maximizeWindow();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -28,16 +30,16 @@ public class ContactTest { //TestNG class
 //		enter username and password 
 		WebElement username = driver.findElement(By.name("user_name"));
 //					0011 
-		
+
 		driver.navigate().refresh();
-		
+
 //		re-initialization 
 		username = driver.findElement(By.name("user_name"));
 //		 1100
-		
+
 		username.sendKeys("admin");
 //		 1100
-		
+
 		WebElement password = driver.findElement(By.name("user_password"));
 		password.sendKeys("password");
 
@@ -62,12 +64,8 @@ public class ContactTest { //TestNG class
 //		verification
 		String actLastName = driver.findElement(By.id("dtlview_Last Name")).getText();
 		boolean status = actLastName.equals(lastName);
-		if (status) {
-			System.out.println("Contact created successfully!!!");
-			Reporter.log("--Contact created successfully!!!--");
-		} else {
-			System.out.println("Failed.....");
-		}
+
+		Assert.assertTrue(status); //if failed => AssertionError
 
 //		logout
 		WebElement profile = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
@@ -79,8 +77,7 @@ public class ContactTest { //TestNG class
 //		browser closing
 		Thread.sleep(3000);
 		driver.quit();
+
 	}
-
-
 
 }

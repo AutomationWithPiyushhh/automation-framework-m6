@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng_extra.DemoDOMTest">
+      <class name="assertion.PracticeAssertion">
         <methods>
-          <include name="modifyContactTest"/>
-          <include name="deleteContactTest"/>
-          <include name="createContactTest"/>
+          <include name="nullNotNull"/>
         </methods>
-      </class> <!-- testng_extra.DemoDOMTest -->
+      </class> <!-- assertion.PracticeAssertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
