@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]">
-  <test thread-count="5" parallel="tests" name="thread2(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
     <classes>
-      <class name="types_of_execution.ContactTest">
+      <class name="crm.contacts.ContactTest">
         <methods>
+          <include name="login"/>
           <include name="createContactTest"/>
+          <include name="closeBro"/>
+          <include name="logout"/>
+          <include name="openBro"/>
         </methods>
-      </class> <!-- types_of_execution.ContactTest -->
+      </class> <!-- crm.contacts.ContactTest -->
     </classes>
-  </test> <!-- thread2(failed) -->
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="crm.leads.LeadsTest">
+        <methods>
+          <include name="login"/>
+          <include name="createLeadsTest"/>
+          <include name="closeBro"/>
+          <include name="logout"/>
+          <include name="openBro"/>
+        </methods>
+      </class> <!-- crm.leads.LeadsTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="crm.org.OrgTest">
+        <methods>
+          <include name="login"/>
+          <include name="createOrgTest"/>
+          <include name="closeBro"/>
+          <include name="logout"/>
+          <include name="openBro"/>
+        </methods>
+      </class> <!-- crm.org.OrgTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

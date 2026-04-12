@@ -1,52 +1,19 @@
 package crm.contacts;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
-import generic_utility.WebDriverUtility;
+import baseutility.BaseClass;
 
-public class ContactTest { // TestNG class
+public class ContactTest extends BaseClass { // TestNG class
 
 	@Test
 	public void createContactTest() throws InterruptedException { // Test Case
-		// browser opening
-		WebDriver driver = new ChromeDriver(); // Test steps
-
-		WebDriverUtility wdUtil = new WebDriverUtility(driver); // Test steps
-		wdUtil.maximizeWindow();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
-//		login
-		driver.get("http://localhost:8888/");
-
-//		enter username and password 
-		WebElement username = driver.findElement(By.name("user_name"));
-//					0011 
-
-		driver.navigate().refresh();
-
-//		re-initialization 
-		username = driver.findElement(By.name("user_name"));
-//		 1100
-
-		username.sendKeys("admin");
-//		 1100
-
-		WebElement password = driver.findElement(By.name("user_password"));
-		password.sendKeys("password");
-
-//		click on login button
-		driver.findElement(By.id("submitButton")).click();
 
 //		create one contact
+
 //		click on contacts link
 		driver.findElement(By.linkText("Contacts")).click();
 
@@ -65,18 +32,7 @@ public class ContactTest { // TestNG class
 		String actLastName = driver.findElement(By.id("dtlview_Last Name")).getText();
 		boolean status = actLastName.equals(lastName);
 
-		Assert.assertTrue(status); //if failed => AssertionError
-
-//		logout
-		WebElement profile = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
-
-		wdUtil.hover(profile);
-
-		driver.findElement(By.linkText("Sign Out")).click();
-
-//		browser closing
-		Thread.sleep(3000);
-		driver.quit();
+		Assert.assertTrue(status); // if failed => AssertionError
 
 	}
 

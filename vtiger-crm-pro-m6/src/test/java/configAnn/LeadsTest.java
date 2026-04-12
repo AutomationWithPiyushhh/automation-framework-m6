@@ -1,4 +1,4 @@
-package types_of_execution;
+package configAnn;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,13 +7,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class OppTest {
-	@Test(groups = "create")
-	public void createOppTest() throws InterruptedException {
-		WebDriver driver = null;
+public class LeadsTest extends BaseClass{
+	@Test
+	public void createLeadsTest() throws InterruptedException {
 
 		String browser = "chrome";
-		
+
+		WebDriver driver = null;
+
 		if (browser.equals("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browser.equals("edge")) {
@@ -23,19 +24,9 @@ public class OppTest {
 		} else {
 			driver = new ChromeDriver();
 		}
-		
-		Thread.sleep(5000);
-		
-		driver.quit();
 
-	}
-	
-	@Test
-	public void deleteOppTest() throws InterruptedException {
-		WebDriver driver = new ChromeDriver();
-		
-		Thread.sleep(2000);
-		
+		Thread.sleep(5000);
+
 		driver.quit();
 
 	}

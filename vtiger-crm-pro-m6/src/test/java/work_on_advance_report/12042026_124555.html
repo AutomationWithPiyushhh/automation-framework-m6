@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>advance_rep_M6</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">FB report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 12, 2026 12:45:55 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="skip" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">loginInsta</p>
+            <p class="text-sm">
+              <span>12:46:00 pm</span> / <span>00:00:04:408</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">loginInsta</h5>
+<span class='badge badge-success'>04.12.2026 12:46:00 pm</span>
+<span class='badge badge-danger'>04.12.2026 12:46:04 pm</span>
+<span class='badge badge-default'>00:00:04:408</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>12:46:04 pm</td>
+        <td>
+          skippedddd !!!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">loginX</p>
+            <p class="text-sm">
+              <span>12:46:11 pm</span> / <span>00:00:08:072</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">loginX</h5>
+<span class='badge badge-success'>04.12.2026 12:46:11 pm</span>
+<span class='badge badge-danger'>04.12.2026 12:46:20 pm</span>
+<span class='badge badge-default'>00:00:08:072</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+                <a href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYAAAJFCAIAAAC5vjv+AAAQAElEQVR4nOzdXW8c12HH4ZnZXe5ySUqyLdOV7L64cds4oAoBhVEYKAoYvhPgr9Av0U/Tr1EDvnN8aQNGe+OmdhslSBAlCmlbEsV37s5MZqhEURQkIn3F3f/zwDBmzh7qfn5n5pxhAQAAACymra2t808eFgAAAEAACQAAAAAiSAAAAAAQQQIAAACACBIAAAAALI/333//xo0b9+/f//jjj5/7SQIAAACAJXHr1q3bt293F6+99trOzs4XX3zx7K9VAQAAACy+6XT63nvvPb3trruRZydIAAAAALAMPvjgg9Fo9PS2u+5Gnp0gAQAAAMDCe+edd954443nBruRbvzprQQAAAAAC+/dd9994bgEAAAAAAvv7t27LxwvCwAAAGAxbW1tnX+yQwEBAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAAAIAIEgAAAABEkAAAAAAgggQAAAAAESQAAAAAiCABAAAAQAQJAAAAACJIAAAAABBBAgAA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ACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAA1lqvowAABEpJREFUIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAIkgAAAAAEEECAAAAgAgSAAAAAESQAAAAACCCBAAAAAARJAAAAACIIAEAAABABAkAAAAAFt6dO3fefvvtPx7/8ssvP/rooyfXEgAAAAAsvLfeeuuF41UBAAAALLhPP/30heMSAAAAACy8zz///N69e88NdiPd+NNbCQAAAACWwYcffjibzZ7edtfdyLMTJAAAAABYBoeHh5988snT2+66G3l2wqAAAAAAFtPm5uaztzs7O9PpdDKZfPXVV5999tlzk8sCAAAAWExbW1vnn+xQQAAAAIggAQAAAEAECQAAAAAi/AYAAP//5YqozwAAAAZJREFUAwB8dT2mkOyQkgAAAABJRU5ErkJggg==" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+          
+    <div class="title">failed.png</div>
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:46:20 pm</td>
+        <td>
+          Failed....
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 12, 2026 12:45:55 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 12, 2026 12:46:24 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>1</b> tests failed,
+<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='50%'><b>1</b> events failed,
+<b data-tooltip='%'>1</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"loginInsta":4.408,"loginX":8.072
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>key1</td>
+<td>value1</td>
+</tr>
+<tr>
+<td>key2</td>
+<td>value2</td>
+</tr>
+<tr>
+<td>key3</td>
+<td>value3</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 1,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 1,
+warningEvents: 0,
+skipEvents: 1,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

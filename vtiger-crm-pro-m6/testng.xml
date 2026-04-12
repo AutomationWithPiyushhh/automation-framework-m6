@@ -1,0 +1,12 @@
+
+<suite name="Suite">
+	<test name="Test">
+		<classes>
+			<class name="types_of_execution.OppTest" >
+				<methods>
+					<include name="createOppTest"/>				
+				</methods>			
+			</class>
+		</classes>
+	</test> 
+</suite>
