@@ -16,10 +16,12 @@ import generic_utility.WebDriverUtility;
 public class BaseClass {
 	
 	public WebDriver driver;
+	public static WebDriver sdriver;
 	
 	@BeforeClass
 	public void openBro() {
 		driver = new ChromeDriver(); // Test steps
+		sdriver = driver;
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	}

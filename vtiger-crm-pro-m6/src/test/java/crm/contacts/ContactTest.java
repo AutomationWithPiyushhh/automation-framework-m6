@@ -3,10 +3,12 @@ package crm.contacts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import baseutility.BaseClass;
 
+//@Listeners(listeners_utility.List_Imp.class)
 public class ContactTest extends BaseClass { // TestNG class
 
 	@Test

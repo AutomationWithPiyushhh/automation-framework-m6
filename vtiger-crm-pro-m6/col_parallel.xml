@@ -3,6 +3,10 @@
 
 
 <suite parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="listeners_utility.List_Imp"></listener>
+	</listeners>
+
 	<test parallel="tests" name="Test1">
 		<classes>
 			<class name="crm.contacts.ContactTest" />

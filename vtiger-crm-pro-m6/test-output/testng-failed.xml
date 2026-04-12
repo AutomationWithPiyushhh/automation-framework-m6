@@ -3,17 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="work_on_advance_report.Facebook">
+      <class name="Learning_Listeners.Listeners_Practice">
         <methods>
           <include name="login"/>
-          <include name="repBackup"/>
+          <include name="loginFb"/>
           <include name="repConfig"/>
-          <include name="loginX"/>
+          <include name="repBackup"/>
           <include name="closeBro"/>
           <include name="logout"/>
           <include name="openBro"/>
+          <include name="loginX"/>
         </methods>
-      </class> <!-- work_on_advance_report.Facebook -->
+      </class> <!-- Learning_Listeners.Listeners_Practice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
